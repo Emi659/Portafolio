@@ -1,0 +1,47 @@
+:root {
+    --primary-neon: #0004ff;
+    --bg-dark: #000000;
+    --card-bg: #111111;
+}
+
+body {
+    background-color: var(--bg-dark);
+    color: #ffffff;
+    font-family: 'Inter', sans-serif;
+}
+
+.hero {
+    padding: 120px 0;
+}
+
+/* Cuadros de Proyectos más grandes */
+.card {
+    background-color: var(--card-bg);
+    border: 2px solid #222;
+    border-radius: 20px;
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.card:hover {
+    transform: scale(1.05);
+    border-color: var(--primary-neon);
+    box-shadow: 0 0 30px rgba(0, 242, 255, 0.2);
+}
+
+/* Modales */
+.modal-content {
+    border-radius: 20px;
+    border: 2px solid var(--primary-neon);
+}
+
+.badge {
+    font-size: 0.9rem;
+    letter-spacing: 1px;
+}
+
+/* Flecha estática */
+.scroll-arrow {
+    cursor: pointer;
+    color: #0dcaf0;
+    font-size: 3rem;
+}
